@@ -198,7 +198,7 @@
   max-width: 800px;
   margin: 0 auto;
   /* padding: 1rem 2rem 2rem 2rem; */
-  font-family: "Comic Sans MS", cursive, system-ui, sans-serif;
+  font-family: system-ui, sans-serif;
   /* background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%); */
 
   min-height: 100vh;
@@ -403,7 +403,7 @@
   cursor: pointer !important;
   transition: all 0.3s ease !important;
   box-shadow: 0 5px 15px rgba(225, 112, 85, 0.4) !important;
-  font-family: "Comic Sans MS", cursive, system-ui, sans-serif !important;
+  font-family: system-ui, sans-serif;
 }
 
 .recipe-button:hover:not(:disabled) {
@@ -459,7 +459,7 @@
 }
 
 body {
-  font-family: "Comic Sans MS", cursive, system-ui, sans-serif;
+  font-family: system-ui, sans-serif;
   padding: 5cqi;
   background: linear-gradient(135deg, #fff5e6 0%, #ffeaa7 50%, #fab1a0 100%);
   margin: 0;

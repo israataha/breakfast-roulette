@@ -145,45 +145,20 @@ export const RouletteWheel = () => {
               <li key={index}>{word}</li>
             ))}
           </ul>
-          <button
-            onClick={handleSpin}
-            type="button"
-            disabled={isSpinning}
-            //className={`spin-button ${isSpinning ? "spinning" : ""}`}
-            className="spin-button"
-          >
+          <button onClick={handleSpin} type="button" disabled={isSpinning} className="spin-button">
             🎲 SPIN!
           </button>
         </div>
       </div>
-
-      {/* {selectedIndex !== null && (
-        <div className="result-section">
-          <div className="selected-ingredient">
-            <span className="result-label">🎯 Selected Ingredient:</span>
-            <span className="ingredient-name">{breakfastWords[selectedIndex]}</span>
-          </div>
-        </div>
-      )} */}
-
       <div className="action-section">
         <button
           className="recipe-button"
           onClick={() => onSubmit()}
-          disabled={!selectedIndex || chat.isReceiving || chat.isSending}
+          disabled={selectedIndex === null || chat.isReceiving || chat.isSending}
         >
           {chat.isReceiving || chat.isSending ? "🍳 Cooking up something amazing..." : "🍳 What's for breakfast?"}
         </button>
       </div>
-
-      {/* {chat.isReceiving || chat.isSending ? (
-        <div className="loading-section">
-          <div className="loading-message">
-            <span className="cooking-emoji">👨‍🍳</span>
-            <span>Creating your breakfast masterpiece...</span>
-          </div>
-        </div>
-      ) : null} */}
 
       {result && (
         <div className="recipe-section">

@@ -37,6 +37,16 @@ This project was built for the **Web Dev Challenge Hackathon S2.E9: Breakfast Ap
 3. Click the "What's for breakfast?" button to generate a wacky breakfast recipe
 4. Follow the recipe if you dare
 
+## 📸 Screenshots
+
+### Main Game Interface
+
+![Breakfast Roulette Main Interface](./assets/screenshots/roulette-wheel.png)
+
+### Recipe Generation
+
+![Recipe Generation](./assets/screenshots/recipe-card.png)
+
 ## 🚀 Getting Started
 
 ### Prerequisites
